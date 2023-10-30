@@ -2,7 +2,7 @@
 
 Welcome to the XEVO Space Game Simulator! Follow the instructions below to set up and run the project on your Windows machine.
 
-<a href="http://xevo.space" target="_blank">
+<a href="https://xevo.space" target="_blank">
     <img src="https://img.shields.io/badge/-Demo%20Here-blue?style=for-the-badge" alt="Demo Here">
 </a>
 
