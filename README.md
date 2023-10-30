@@ -10,7 +10,7 @@ The demo is on Azure.
 - [Setup on Ubuntu](#setup-on-ubuntu)
 
 
-## Setup on Windows {#setup-on-windows}
+## Setup on Windows 
 
 ### 1. **Install Docker Desktop**
    - Download and install Docker Desktop from [Docker Official Site](https://www.docker.com/products/docker-desktop).
@@ -63,7 +63,7 @@ The demo is on Azure.
          docker-compose up --build
          ```
 
-## Setup on Ubuntu {#setup-on-ubuntu}
+## Setup on Ubuntu 
 
 #### 1. **Install Docker and Kubernetes**
    Follow the instructions to install [Docker](https://docs.docker.com/engine/install/ubuntu/) and [Kubernetes](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/) on Ubuntu.
