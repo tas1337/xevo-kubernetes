@@ -1,0 +1,17 @@
+version: '3'
+services:
+  #build angular app and run api
+  xevo-api:
+    build: 
+      context: .
+      dockerfile: ./xevo-api/Dockerfile 
+    ports:
+      - "3000:3000"
+    depends_on:
+      - xevo-cpp-server
+
+  #run server
+  xevo-cpp-server:
+    build: ./xevo-cpp-server
+    ports:
+      - "8080:8080"

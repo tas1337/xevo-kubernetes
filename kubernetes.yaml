@@ -1,0 +1,71 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: xevo-api-service
+spec:
+  selector:
+    app: xevo-api
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+  type: LoadBalancer
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xevo-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: xevo-api
+  template:
+    metadata:
+      labels:
+        app: xevo-api
+    spec:
+      containers:
+      - name: xevo-api
+        image: tas1337/xevo-api:latest
+        ports:
+        - containerPort: 3000
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: xevo-cpp-server-service
+spec:
+  selector:
+    app: xevo-cpp-server
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: LoadBalancer
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xevo-cpp-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: xevo-cpp-server
+  template:
+    metadata:
+      labels:
+        app: xevo-cpp-server
+    spec:
+      containers:
+      - name: xevo-cpp-server
+        image: tas1337/xevo-cpp-server:latest
+        ports:
+        - containerPort: 8080
