@@ -5,7 +5,12 @@ Welcome to the XEVO Space Game Simulator! Follow the instructions below to set u
 [![Demo Here](https://img.shields.io/badge/-Demo%20Here-blue?style=for-the-badge)](http://xevo.space)
 The demo is on Azure.
 
-## Setup on Windows
+## Table of Contents
+- [Setup on Windows](#setup-on-windows)
+- [Setup on Ubuntu](#setup-on-ubuntu)
+
+
+## Setup on Windows {#setup-on-windows}
 
 ### 1. **Install Docker Desktop**
    - Download and install Docker Desktop from [Docker Official Site](https://www.docker.com/products/docker-desktop).
@@ -57,6 +62,22 @@ The demo is on Azure.
          ```bash
          docker-compose up --build
          ```
+
+## Setup on Ubuntu {#setup-on-ubuntu}
+
+#### 1. **Install Docker and Kubernetes**
+   Follow the instructions to install [Docker](https://docs.docker.com/engine/install/ubuntu/) and [Kubernetes](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/) on Ubuntu.
+
+#### 2. **Clone the Main Repository**
+   ```bash
+   git clone https://github.com/tas1337/xevo-kubernetes.git
+   ```
+#### 3. **Clone the Sub-Repositories**
+   Navigate inside the `xevo-kubernetes` folder and clone the sub-repositories as described in the Windows section.
+
+#### 4. **Deployment**
+   Follow the same deployment steps as described in the Windows section.
+
 
 ## Conclusion
 Your XEVO Space Game Simulator should now be up and running. Enjoy exploring space! 🚀
