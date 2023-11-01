@@ -37,7 +37,7 @@ The demo is on Azure.
        gh repo clone tas1337/xevo-game
        ```
      
-     #### - **C++ TLC Server**
+     #### - **C++ TCP Server**
        ```bash
        git clone https://github.com/tas1337/xevo-cpp-server
        # or using GitHub CLI
