@@ -1,17 +1,16 @@
 # XEVO Space Game Simulator
 
-Welcome to the XEVO Space Game Simulator! Follow the instructions below to set up and run the project on your Windows machine.
+Welcome to the XEVO Project! This guide provides detailed instructions for setting up and running the project on your local machine. You have the flexibility to use either Kubernetes or Docker-compose for local deployment. This project is entirely open-source, and I've utilized ChatGPT for refactoring and tweaking, as well as GitHub Copilot while building it. I built this project from scratch in just one weekend. I thought it would be really cool to have a TCP server (kind of what WoW uses) that also communicates with a HTTP socket server that can then communicate with a web page in real time. There will also soon be an Unreal Engine 5 demo connected to the TCP server, enabling synchronized movement: when you move in the browser, it's mirrored in the Unreal environment, and vice versa.
+
+###Below is a browser demo, its running on Azure:
 
 <a href="https://xevo.space" target="_blank">
     <img src="https://img.shields.io/badge/-Demo%20Here-blue?style=for-the-badge" alt="Demo Here">
 </a>
 
-The demo is on Azure.
-
 ## Table of Contents
 - [Setup on Windows](#setup-on-windows)
 - [Setup on Ubuntu](#setup-on-ubuntu)
-
 
 ## Setup on Windows 
 
@@ -23,7 +22,9 @@ The demo is on Azure.
    - Clone the main project repository to a suitable location on your computer.
      ```bash
      git clone https://github.com/tas1337/xevo-kubernetes/
+     ```
      # or using GitHub CLI
+     ```bash
      gh repo clone tas1337/xevo-kubernetes
      ```
    
@@ -33,21 +34,29 @@ The demo is on Azure.
      #### - **Angular App (The Game)**
        ```bash
        git clone https://github.com/tas1337/xevo-game
+        ```
        # or using GitHub CLI
-       gh repo clone tas1337/xevo-game
+       
+        ```bash
+           gh repo clone tas1337/xevo-game
        ```
      
      #### - **C++ TCP Server**
        ```bash
        git clone https://github.com/tas1337/xevo-cpp-server
+       ```
+       
        # or using GitHub CLI
+       ```bash
        gh repo clone tas1337/xevo-cpp-server
        ```
      
      #### - **NodeJS HTTP Server**
        ```bash
        git clone https://github.com/tas1337/xevo-api
+       ```
        # or using GitHub CLI
+      ```bash
        gh repo clone tas1337/xevo-api
        ```
    
@@ -80,6 +89,7 @@ The demo is on Azure.
 
 #### 4. **Deployment**
    Follow the same deployment steps as described in the Windows section.
+   - [### 4. **Build and Run the Project**](#setup-on-ubuntu)
 
 
 ## Conclusion
