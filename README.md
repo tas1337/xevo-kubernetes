@@ -21,53 +21,52 @@ Welcome to the XEVO Project! This guide provides detailed instructions for setti
 ### 2. **Clone the Main Repository**
    - Clone the main project repository to a suitable location on your computer.
      ```bash
-     git clone https://github.com/tas1337/xevo-kubernetes/
+         git clone https://github.com/tas1337/xevo-kubernetes/
      ```
      #### or using GitHub CLI
      ```bash
-     gh repo clone tas1337/xevo-kubernetes
+         gh repo clone tas1337/xevo-kubernetes
      ```
    
 ### 3. **Clone the Sub-Repositories**
    - Navigate inside the `xevo-kubernetes` folder and clone the following repositories.
-
-     #### - **Angular App (The Game)**
-       ```bash
-       git clone https://github.com/tas1337/xevo-game
+        
+        #### - **Angular App (The Game)**
+        ```bash
+            git clone https://github.com/tas1337/xevo-game
         ```
         ```bash
-           gh repo clone tas1337/xevo-game
+            gh repo clone tas1337/xevo-game
         ```
-     
-     #### - **C++ TCP Server**
-       ```bash
-       git clone https://github.com/tas1337/xevo-cpp-server
-       ```
-       ```bash
-       gh repo clone tas1337/xevo-cpp-server
-       ```
-       
-     #### - **NodeJS HTTP Server**
-       ```bash
-       git clone https://github.com/tas1337/xevo-api
-       ```
-      ```bash
-       gh repo clone tas1337/xevo-api
-       ```
+        
+        #### - **C++ TCP Server**
+        ```bash
+            git clone https://github.com/tas1337/xevo-cpp-server
+        ```
+        ```bash
+            gh repo clone tas1337/xevo-cpp-server
+        ```
+        
+        #### - **NodeJS HTTP Server**
+        ```bash
+            git clone https://github.com/tas1337/xevo-api
+        ```
+        ```bash
+            gh repo clone tas1337/xevo-api
+        ```
    
 ### 4. **Build and Run the Project**
    - Navigate back to the parent folder (`xevo-kubernetes`).
    - Choose one of the following methods to build and run the project:
    
-     #### - **Kubernetes**
-       ```bash
-       kubectl apply -f kubernetes.yaml
-       ```
-     #### - **Docker-Compose**
-     #####Build and run using the repositories you’ve cloned.
-     ```bash
-     docker-compose up --build
-     ```
+        #### - **Kubernetes**
+        ```bash
+            kubectl apply -f kubernetes.yaml
+        ```
+        #### - **Docker-Compose**
+        ```bash
+            docker-compose up --build
+        ```
 
 ## Setup on Ubuntu 
 
@@ -76,7 +75,7 @@ Welcome to the XEVO Project! This guide provides detailed instructions for setti
 
 #### 2. **Clone the Main Repository**
    ```bash
-   git clone https://github.com/tas1337/xevo-kubernetes.git
+       git clone https://github.com/tas1337/xevo-kubernetes.git
    ```
 #### 3. **Clone the Sub-Repositories**
    Navigate inside the `xevo-kubernetes` folder and clone the sub-repositories as described in the Windows section.
