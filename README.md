@@ -35,25 +35,22 @@ Welcome to the XEVO Project! This guide provides detailed instructions for setti
        ```bash
        git clone https://github.com/tas1337/xevo-game
         ```
-       #### or using GitHub CLI
         ```bash
            gh repo clone tas1337/xevo-game
-       ```
+        ```
      
      #### - **C++ TCP Server**
        ```bash
        git clone https://github.com/tas1337/xevo-cpp-server
        ```
-       #### or using GitHub CLI
        ```bash
        gh repo clone tas1337/xevo-cpp-server
        ```
-     
+       
      #### - **NodeJS HTTP Server**
        ```bash
        git clone https://github.com/tas1337/xevo-api
        ```
-       #### or using GitHub CLI
       ```bash
        gh repo clone tas1337/xevo-api
        ```
@@ -62,12 +59,11 @@ Welcome to the XEVO Project! This guide provides detailed instructions for setti
    - Navigate back to the parent folder (`xevo-kubernetes`).
    - Choose one of the following methods to build and run the project:
    
-     #### - **Using Kubernetes**
+     #### - **Kubernetes**
        ```bash
        kubectl apply -f kubernetes.yaml
        ```
-     
-     #### - **Using Docker-Compose**
+     #### - **Docker-Compose**
      #####Build and run using the repositories you’ve cloned.
      ```bash
      docker-compose up --build
@@ -87,7 +83,7 @@ Welcome to the XEVO Project! This guide provides detailed instructions for setti
 
 #### 4. **Deployment**
    Follow the same deployment steps as described in the Windows section.
-   - [### 4. **Build and Run the Project**](#setup-on-ubuntu)
+   - [Go To Deployment Steps](#4-build-and-run-the-project)
 
 
 ## Conclusion
