@@ -23,7 +23,7 @@ Welcome to the XEVO Project! This guide provides detailed instructions for setti
      ```bash
      git clone https://github.com/tas1337/xevo-kubernetes/
      ```
-     # or using GitHub CLI
+     #### or using GitHub CLI
      ```bash
      gh repo clone tas1337/xevo-kubernetes
      ```
@@ -35,8 +35,7 @@ Welcome to the XEVO Project! This guide provides detailed instructions for setti
        ```bash
        git clone https://github.com/tas1337/xevo-game
         ```
-       # or using GitHub CLI
-       
+       #### or using GitHub CLI
         ```bash
            gh repo clone tas1337/xevo-game
        ```
@@ -45,8 +44,7 @@ Welcome to the XEVO Project! This guide provides detailed instructions for setti
        ```bash
        git clone https://github.com/tas1337/xevo-cpp-server
        ```
-       
-       # or using GitHub CLI
+       #### or using GitHub CLI
        ```bash
        gh repo clone tas1337/xevo-cpp-server
        ```
@@ -55,7 +53,7 @@ Welcome to the XEVO Project! This guide provides detailed instructions for setti
        ```bash
        git clone https://github.com/tas1337/xevo-api
        ```
-       # or using GitHub CLI
+       #### or using GitHub CLI
       ```bash
        gh repo clone tas1337/xevo-api
        ```
@@ -70,10 +68,10 @@ Welcome to the XEVO Project! This guide provides detailed instructions for setti
        ```
      
      #### - **Using Docker-Compose**
-       - Build and run using the repositories you’ve cloned.
-         ```bash
-         docker-compose up --build
-         ```
+     #####Build and run using the repositories you’ve cloned.
+     ```bash
+     docker-compose up --build
+     ```
 
 ## Setup on Ubuntu 
 
