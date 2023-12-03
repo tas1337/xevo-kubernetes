@@ -7,8 +7,8 @@ spec:
     app: xevo-api
   ports:
     - protocol: TCP
-      port: 6969
-      targetPort: 6969
+      port: 5566
+      targetPort: 5566
   type: LoadBalancer
 
 ---
@@ -31,7 +31,7 @@ spec:
       - name: xevo-api
         image: tas1337/xevo-api:latest
         ports:
-        - containerPort: 6969
+        - containerPort: 5566
 
 ---
 

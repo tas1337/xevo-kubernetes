@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: ./xevo-api/Dockerfile 
     ports:
-      - "6969:6969"
+      - "5566:5566"
     depends_on:
       - xevo-cpp-server
     networks:
