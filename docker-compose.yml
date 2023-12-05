@@ -11,6 +11,7 @@ services:
       - xevo-cpp-server
     networks:
       - xevo-network
+    restart: always
 
   # run server
   xevo-cpp-server:
@@ -20,6 +21,7 @@ services:
     networks:
       - xevo-network
     hostname: xevo-cpp-server
+    restart: always
 
 networks:
   xevo-network:
